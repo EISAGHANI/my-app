@@ -1,15 +1,22 @@
 .video-container {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Set the video container to full viewport height */
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Set the video container to full viewport height */
+  overflow: hidden;
+}
+
+.video-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  /* Apply different styles for screens smaller than 768px */
+  .video-container {
+    height: 50vh; /* Adjust the height to your preference */
   }
-  
-  .video-element {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-  }
-  
+}
